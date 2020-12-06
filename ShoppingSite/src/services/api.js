@@ -2,7 +2,7 @@ const axios = require('axios')
 
 export const login= (req)=>{
     
-return axios.post('http://localhost:3000/login', {
+return axios.post('http://localhost:5000/login', {
     email: req.email,
     password: req.password
   })
@@ -15,7 +15,7 @@ return axios.post('http://localhost:3000/login', {
 
 export const signup = (req)=>{
     
-    return axios.post('http://localhost:3000/signup', {
+    return axios.post('http://localhost:5000/signup', {
         firstname:req.firstname,
         lastname:req.lastname,
         email: req.email,
@@ -28,7 +28,7 @@ export const signup = (req)=>{
     }
 export const address = (req)=>{
     
-    return axios.post('http://localhost:3000/address', {
+    return axios.post('http://localhost:5000/address', {
         firstname: req.firstname,
         lastname:req.lastname,
         addressline1:req.addressline1,
@@ -47,7 +47,7 @@ export const address = (req)=>{
 
 export const payment = (req)=>{
     
-return axios.post('http://localhost:3000/address', {
+return axios.post('http://localhost:5000/address', {
     cardname: req.cardname,
     cardnumber:req.cardnumber,
     expirydate:req.expirydate,
