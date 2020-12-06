@@ -1,0 +1,45 @@
+@import './fonts';
+@import './variables';
+
+$bg-color: yellow;
+$border-color: red;
+
+.app {
+  font-family: $body-font !important;
+
+  .eh1 {
+    color: rgba(10, 20, 30, 0.4);
+  }
+  .eh2 {
+    color: rgba(10, 20, 30, 0.8);
+  }
+  .ct3 {
+    font-size: xx-large;
+  }
+  .ti4 {
+    width: 50%;
+    height: 30px;
+    input {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      border: none;
+      background: transparent;
+      outline: 0;
+    }
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.carousel .slide {
+  background: transparent !important;
+}
+
+.sizeLabel {
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 8px !important;
+}
